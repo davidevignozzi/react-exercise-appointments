@@ -11,7 +11,7 @@ const Main = () => {
     }
 
   return (
-    <main>
+    <main style={{margin: "3rem 10%"}}>
         <div className="container">
             <div className="people-list">
                 <List data={people} removeItem={removeItem} />
