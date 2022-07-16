@@ -95,6 +95,12 @@ p {
   }
 }
 
+.title{
+  color: var(--bg-blue);
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .btn {
   display: inline-block;
   border: none;
