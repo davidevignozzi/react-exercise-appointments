@@ -14,6 +14,10 @@ const Main = () => {
         setPeople(data);
     }
 
+    const deleteAll = () => {
+        setPeople([]);
+    }
+
   return (
     <main style={{margin: "3rem 10%"}}>
         <div className="container">
@@ -25,7 +29,7 @@ const Main = () => {
                 <button className="btn btn-reset" onClick={reloadAll}>
                     Reload
                 </button>
-                <button className="btn btn-delete">
+                <button className="btn btn-delete" onClick={deleteAll}>
                     Delete
                 </button>
             </section>
