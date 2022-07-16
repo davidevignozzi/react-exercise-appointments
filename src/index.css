@@ -237,6 +237,7 @@ article .person-info p {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
+  height: 5rem;
   -moz-justify-content: space-between;
   -webkit-justify-content: space-between;
   -ms-justify-content: space-between;

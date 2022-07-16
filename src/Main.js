@@ -16,6 +16,15 @@ const Main = () => {
             <div className="people-list">
                 <List data={people} removeItem={removeItem} />
             </div>
+
+            <section id='buttons' className='btn-group'>
+                <button className="btn btn-reset">
+                    Reload
+                </button>
+                <button className="btn btn-delete">
+                    Delete
+                </button>
+            </section>
         </div>
     </main>
   )
