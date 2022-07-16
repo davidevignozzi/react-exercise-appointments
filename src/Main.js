@@ -4,13 +4,17 @@ import List from './List'
 
 const Main = () => {
 
-    const [people, setPeople] = useState(data)
+    const [people, setPeople] = useState(data);
+
+    const removeItem = (id) => {
+        setPeople((oldValue) => oldValue.filter((value) => value.id !== id));
+    }
 
   return (
     <main>
         <div className="container">
             <div className="people-list">
-                <List data={people} />
+                <List data={people} removeItem={removeItem} />
             </div>
         </div>
     </main>
