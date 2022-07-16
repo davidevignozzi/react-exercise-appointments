@@ -10,6 +10,10 @@ const Main = () => {
         setPeople((oldValue) => oldValue.filter((value) => value.id !== id));
     }
 
+    const reloadAll = () => {
+        setPeople(data);
+    }
+
   return (
     <main style={{margin: "3rem 10%"}}>
         <div className="container">
@@ -18,7 +22,7 @@ const Main = () => {
             </div>
 
             <section id='buttons' className='btn-group'>
-                <button className="btn btn-reset">
+                <button className="btn btn-reset" onClick={reloadAll}>
                     Reload
                 </button>
                 <button className="btn btn-delete">
